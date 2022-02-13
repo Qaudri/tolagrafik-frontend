@@ -57,6 +57,7 @@ export default{
 .header {
   max-height: .2rem;
   position: absolute;
+  z-index: 99999;
   width: 100%;
 }
 </style>

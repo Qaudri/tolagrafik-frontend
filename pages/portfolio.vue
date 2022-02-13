@@ -1,7 +1,25 @@
 <template>
   <div>
 
-  portfolios
+    <div>
+
+      <SectionsCommonHeader />
+
+    </div>
+
+    <div class="relative  pt-20">
+      <div>
+        <SectionsPortfolioGradient class="absolute w-full bottom-0"/>
+      </div>
+
+      <div>
+        <SectionsPortfolioPortfoliomain />
+      </div>
+
+
+
+    </div>
+
   </div>
 
 </template>
@@ -11,3 +29,18 @@ export default {
 
 }
 </script>
+
+<style >
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,800&display=swap');
+
+body{
+  font-family: 'Manrope', sans-serif ;
+  background: #000000;
+}
+
+br{   
+  content: "A" !important;
+  display: block !important;
+  margin-bottom: .75em !important;
+}
+</style>
