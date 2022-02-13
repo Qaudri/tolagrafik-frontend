@@ -7,8 +7,8 @@
     </div>
 
     <div class="lg:flex lg:justify-between items-stretch ">
-      <div class="lg:w-1/2 lg:absolute left-0 lg:bottom-0 md:p-20 lg:p-0 p-10 pb-0 pl-0">
-        <img src="@/assets/images/tola-pic.png" alt="">
+      <div class="lg:w-1/2 lg:absolute left-0 lg:bottom-0  lg:p-0 p-10 pb-0 pl-0">
+        <img src="@/assets/images/tola-pic.png" alt="" width="100%" class="mt-14">
       </div>
 
       <div class="lg:px-16 lg:mb-2 flex lg:absolute md:py-4 md:px-10 px-8 py-6 lg:w-1/2 lg:right-0 lg:bottom-0 xl:mb-6">

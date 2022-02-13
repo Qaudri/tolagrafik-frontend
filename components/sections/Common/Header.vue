@@ -1,6 +1,6 @@
 <template>
 
-  <div class="px-8 py-6 md:py-4 md:px-10 items-center">
+  <div class="px-8 py-6 md:py-4 md:px-10 items-center header">
     <div class="block md:flex justify-between">
 
       <div class="flex justify-between">
@@ -54,7 +54,9 @@ export default{
 </script>
 
 <style>
-body {
-  max-height: 1.5rem;
+.header {
+  max-height: .2rem;
+  position: absolute;
+  width: 100%;
 }
 </style>
