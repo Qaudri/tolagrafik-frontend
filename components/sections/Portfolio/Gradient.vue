@@ -2,9 +2,9 @@
   <div>
     <div class="gradient-bg flex justify-center items-center">
 
-      <div class="flex mt-2">
-        <p class="font-medium text-2xl text-yellow-500 mx-4">See More</p>
-        <img :src=" require('@/assets/images/expand_arrow.svg') " alt="" width="35px">
+      <div class="flex pt-4">
+        <p class="font-medium text-2xl text-white mx-4">See More</p>
+        <img :src=" require('@/assets/images/expand_arrow.svg') " alt="" width="25px">
       </div>
 
     </div>

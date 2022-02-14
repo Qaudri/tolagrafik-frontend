@@ -8,15 +8,17 @@
         <UiSharedLogo />  
 
         <div>
-          <UiButtonsClosebtn @click="this.toggleButtons" :class="menuState.open ? 'block' : 'hidden' "  class="md:hidden cursor-pointer" />
-          <UiButtonsMenubtn @click="this.toggleMenu" :class="menuState.open ? 'hidden' : 'block' "  class="md:hidden absolute z-10 right-8" />
+          <!-- <UiButtonsClosebtn /> -->
+          <img @click="toggleMenu" :class="is_menu_open ? 'block' : 'hidden' "  class="md:hidden cursor-pointer"  :src="require('@/assets/images/delete.svg')" alt="" width="35px" />
+          <!-- <img  @click="toggleMenu" :class="is_menu_open ? 'hidden' : 'block' "  class="md:hidden absolute z-10 right-8" :src="require('@/assets/images/menu.svg')" alt="" width="35px" /> -->
+          <UiButtonsMenubtn @menuClicked="toggleMenu" />
         </div>
 
       </div>
 
       <div>
-        <UiSharedMenu :class="menuState.open ? 'block' : 'hidden'" 
-        class="md:block flex items-center absolute w-full md:relative bg-gray-800 bg-opacity-90 h-screen md:bg-transparent top-0 left-0" />
+        <UiSharedMenu :class="is_menu_open ? 'block' : 'hidden'" 
+        class="md:block flex items-center absolute w-full md:relative bg-gray-800 bg-opacity-90 h-screen md:h-auto md:bg-transparent top-0 left-0" />
       </div>
     </div>
 
@@ -30,23 +32,15 @@
 export default{
 	data(){
     return{
-      menuState: {
-        open: false,
-        closed: true
-      }
+      is_menu_open: false,
     }
   },
 
   methods: {
     toggleMenu(){
-      this.menuState.open = true
-      this.menuState.closed = false
+      this.is_menu_open = !this.is_menu_open
     },
 
-    toggleButtons(){
-      this.menuState.open = false
-      this.menuState.closed = true
-    }
   }
 }
 
@@ -55,9 +49,9 @@ export default{
 
 <style>
 .header {
-  max-height: .2rem;
-  position: absolute;
-  z-index: 99999;
+  /* max-height: .2rem; */
+  /* position: absolute;
+  z-index: 99999; */
   width: 100%;
 }
 </style>
