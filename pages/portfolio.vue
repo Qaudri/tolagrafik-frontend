@@ -7,13 +7,15 @@
 
     </div>
 
-    <div class="relative  pt-20">
+    <div class="relative">
       <div>
-        <SectionsPortfolioGradient class="absolute w-full bottom-0"/>
+        <SectionsPortfolioGradient @btnClicked="revealMore" class="absolute w-full bottom-0" />
       </div>
 
       <div>
         <SectionsPortfolioPortfoliomain />
+
+        <SectionsPortfolioSecond class="mt-3" :class="is_revealed ? 'block' : 'hidden' " />
       </div>
 
 
@@ -26,7 +28,17 @@
 
 <script>
 export default {
+  data(){
+    return{
+      is_revealed: false
+    }
+  },
+  methods: {
 
+    revealMore(){
+      this.is_revealed = true
+    }
+  }
 }
 </script>
 

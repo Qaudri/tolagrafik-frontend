@@ -9,9 +9,9 @@
 
         <div>
           <!-- <UiButtonsClosebtn /> -->
-          <img @click="toggleMenu" :class="is_menu_open ? 'block' : 'hidden' "  class="md:hidden cursor-pointer"  :src="require('@/assets/images/delete.svg')" alt="" width="35px" />
-          <!-- <img  @click="toggleMenu" :class="is_menu_open ? 'hidden' : 'block' "  class="md:hidden absolute z-10 right-8" :src="require('@/assets/images/menu.svg')" alt="" width="35px" /> -->
-          <UiButtonsMenubtn @menuClicked="toggleMenu" />
+          <img @click="toggleMenu" :class="is_menu_open ? 'block' : 'hidden' "  class="md:hidden cursor-pointer absolute z-10 right-8"  :src="require('@/assets/images/delete.svg')" alt="" width="35px" />
+          <img  @click="toggleMenu" :class="is_menu_open ? 'hidden' : 'block' "  class="md:hidden" :src="require('@/assets/images/menu.svg')" alt="" width="35px" />
+          <!-- <UiButtonsMenubtn @menuClicked="toggleMenu" /> -->
         </div>
 
       </div>
