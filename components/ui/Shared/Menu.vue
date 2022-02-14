@@ -17,9 +17,7 @@
           </li>
 
           <li class="md:mx-2 md:my-2 my-6">
-            <a href="" class="md:text-gray-500 text-white hover:text-yellow-300 font-normal xl:text-3xl text-2xl transition duration-1000 ease-in-out">
-              Hire Me
-            </a>
+            <UiButtonsHireme />
           </li>
 
           <li class="md:mx-2 md:my-2 my-6">
