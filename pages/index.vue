@@ -11,10 +11,10 @@
         <img src="@/assets/images/tola-pic.png" alt="" width="100%" class="mt-14">
       </div>
 
-      <div class="lg:px-16 lg:mb-2 flex lg:absolute md:py-4 md:px-10 px-8 py-6 lg:w-1/2 lg:right-0 lg:bottom-0 xl:mb-6">
+      <div class="flex md:py-4 md:px-10 px-8 py-6 lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0 2xl:px-16">
 
         <!-- <div class="w-6/12"></div> -->
-        <p class="font-normal text-white text-sm lg:text-base md:text-2xl md:leading-8 lg:leading-7 xl:text-xl xl:leading-10">
+        <p class="2xl:text-2xl font-normal 2xl:leading-8 text-white text-sm md:text-2xl md:leading-8 lg:leading-7 lg:text-xl">
           
           Hi, I'm <span class="text-yellow-400">Omotola</span>!
             <br>
@@ -54,11 +54,12 @@ export default {
 
 body{
   font-family: 'Manrope', sans-serif ;
+  background: #000000;
 }
 
 br{   
   content: "A" !important;
   display: block !important;
-  margin-bottom: .75em !important;
+  margin-bottom: .65em !important;
 }
 </style>

@@ -2,7 +2,7 @@
   <div>
 
     <button 
-      class="md:text-gray-500 text-white hover:text-yellow-300 xl:text-3xl font-normal text-2xl transition duration-1000 ease-in-out" @click="showOptions">
+      class="md:text-gray-500 text-white hover:text-yellow-300 font-normal text-2xl transition duration-1000 ease-in-out" @click="showOptions">
       Hire Me
     </button>
 
