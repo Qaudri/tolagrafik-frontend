@@ -13,9 +13,8 @@
       </div>
 
       <div>
-        <SectionsPortfolioPortfoliomain />
+        <SectionsPortfolioPortfolioimages class="" />
 
-        <SectionsPortfolioSecond class="mt-3" :class="is_revealed ? 'block' : 'hidden' " />
       </div>
 
 
