@@ -6,7 +6,7 @@
       Hire Me
     </button>
 
-    <div class="px-4 py-2 absolute z-10 bg-black" :class=" options_showing ? 'block' : 'hidden' " >
+    <div class="px-4 py-2 md:absolute z-10 md:bg-black" :class=" options_showing ? 'block' : 'hidden' " >
       <div class="block">
 
         <a href="" 
