@@ -1,7 +1,7 @@
 <template>
 
-  <div>
-    <img :src=" require('@/assets/images/zvari.jpg') " alt="" width="100%">
+  <div class="w-full">
+    <slot />
   </div>
   
 </template>
